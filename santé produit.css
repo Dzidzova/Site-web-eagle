@@ -1,0 +1,283 @@
+/* Style spécifique pour la page Santé et Lithothérapie */
+
+:root {
+    --primary-color: #006a4e; /* Vert apaisant */
+    --secondary-color: #ffe600; /* Vert clair doux */
+    --accent-color: #c8102e; /* Beige naturel */
+    --text-color: #2E2E2E;
+    --background-color: #F5F5F5;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.product-container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.product-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-header h1 {
+    font-size: 2.5em;
+    color: #2a6e3f;
+}
+
+.product-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Filtrage des produits */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter-container label {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.filter-select {
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Grille des produits */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.product-info h3 {
+    font-size: 1.8em;
+    color: #2a6e3f;
+}
+
+.product-description {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.buy-button {
+    background-color: #2a6e3f;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #1d804e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-header h1 {
+        font-size: 2.2em;
+    }
+
+    .product-item {
+        padding: 15px;
+    }
+
+    .product-info h3 {
+        font-size: 1.6em;
+    }
+
+    .product-description {
+        font-size: 1em;
+    }
+}
+.intro h2 {
+    color: var(--primary-color);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.domains {
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.domains h2 {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.domain-buttons .btn {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.domain-buttons .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Responsivité */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 4rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 3rem 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .intro {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .intro {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits - Épices, Farines et Légumes</title>
+    <link rel="stylesheet" href="Epice produit.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="EAGLE LOGO.jpg" alt="Logo de l'entreprise" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="epices-index.html">Accueil</a></li>
+                <li><a href="epices-propos.html">À propos</a></li>
+                <li><a href="epices-produit.html">Produits</a></li>
+                <li><a href="epices-temoignage.html">Témoignages</a></li>
+                <li><a href="epices-achat.html">Acheter</a></li>
+                <li><a href="../index.html">Retour</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <div class="product-header">
+            <h1>Nos Produits</h1>
+            <p>Découvrez notre sélection d'épices, farines et légumes soigneusement cultivés et transformés pour <br>garantir qualité et saveurs authentiques.</p>
+        </div>
+
+        <!-- Grille des produits -->
+        <div class="products-grid">
+            <div class="product-item epices">
+                <img src="curcuma.jpg" alt="Curcuma en poudre">
+                <div class="product-info">
+                    <h3>Curcuma en Poudre</h3>
+                    <p class="product-description">Épice aux multiples vertus, idéale pour assaisonner vos plats et renforcer votre immunité.</p>
+                    <span class="price">5000 FCFA</span>
+                    <button class="buy-button" onclick="addToCart('Curcuma en Poudre', 5000)">Ajouter au Panier</button>
+                </div>
+            </div>
+            <div class="product-item farine">
+                <img src="farine-manioc.jpg" alt="Farine de manioc">
+                <div class="product-info">
+                    <h3>Farine de Manioc</h3>
+                    <p class="product-description">Naturelle et sans gluten, parfaite pour la pâtisserie et les recettes locales.</p>
+                    <span class="price">3500 FCFA</span>
+                    <button class="buy-button" onclick="addToCart('Farine de Manioc', 3500)">Ajouter au Panier</button>
+                </div>
+            </div>
+            <div class="product-item legumes">
+                <img src="tomates-sechees.jpg" alt="Tomates séchées">
+                <div class="product-info">
+                    <h3>Tomates Séchées</h3>
+                    <p class="product-description">Des tomates naturellement séchées pour rehausser la saveur de vos sauces et plats.</p>
+                    <span class="price">4000 FCFA</span>
+                    <button class="buy-button" onclick="addToCart('Tomates Séchées', 4000)">Ajouter au Panier</button>
+                </div>
+            </div>
+            <div class="product-item epices">
+                <img src="gingembre.jpg" alt="Gingembre en poudre">
+                <div class="product-info">
+                    <h3>Gingembre en Poudre</h3>
+                    <p class="product-description">Une touche piquante et revigorante pour vos infusions et plats épicés.</p>
+                    <span class="price">4500 FCFA</span>
+                    <button class="buy-button" onclick="addToCart('Gingembre en Poudre', 4500)">Ajouter au Panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="domains">
+            <h2>Nos Domaines</h2>
+            <div class="domain-buttons">
+                <a href="Liqueur-index.html" class="btn">Boissons et Liqueurs</a>
+                <a href="Epices-index.html" class="btn">Épices, Farines et Légumes</a>
+                <a href="bar-restaurant/index.html" class="btn">Bar & Restaurant</a>
+                <a href="santé-index.html" class="btn">Joaillerie et Lithothérapie</a>
+                <a href="potterie-art-index.html" class="btn">Articles en terre cuite</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EAGLE CONSULTING - Tous droits réservés.</p>
+    </footer>
+
+    <script> </script>
+</body>
+</html>

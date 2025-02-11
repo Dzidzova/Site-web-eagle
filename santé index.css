@@ -1,0 +1,178 @@
+/* Style spécifique pour la page Santé et Lithothérapie */
+
+:root {
+    --primary-color: #006a4e; /* Vert apaisant */
+    --secondary-color: #ffe600; /* Vert clair doux */
+    --accent-color: #c8102e; /* Beige naturel */
+    --text-color: #2E2E2E;
+    --background-color: #F5F5F5;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.hero {
+    text-align: center;
+    padding: 10rem 18rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Pierre\ fond.webp') center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.intro {
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    color: var(--primary-color);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.domains {
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.domains h2 {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.domain-buttons .btn {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.domain-buttons .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Responsivité */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 4rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 3rem 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .intro {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .intro {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,216 @@
+/* Style spécifique pour la page Santé et Lithothérapie */
+
+:root {
+    --primary-color: #006a4e; /* Vert apaisant */
+    --secondary-color: #ffe600; /* Vert clair doux */
+    --accent-color: #c8102e; /* Beige naturel */
+    --text-color: #2E2E2E;
+    --background-color: #F5F5F5;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Témoignages */
+.testimonials-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.order-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.order-section h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.order-section button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-section button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Grille des témoignages */
+#testimonials-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonials-list .testimonial {
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Responsivité */
+@media (max-width: 1024px) {
+    .testimonials-container {
+        padding: 2rem 1rem;
+    }
+
+    .order-section {
+        padding: 15px;
+    }
+}
+
+.intro h2 {
+    color: var(--primary-color);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.domains {
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.domains h2 {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.domain-buttons .btn {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.domain-buttons .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+
+    .order-section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial {
+        width: 100%;
+    }
+
+    .order-section button {
+        width: 100%;
+    }
+}
